@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <Div>
+        <h1> Hello World</h1>
+    </Div>
+    <script type="text/javascript">
+  
+  
+  function maxSalary(salaries) {
+    let max = 0;
+
+    for (let person in salaries) {
+        if (salaries.hasOwnProperty(person)) {
+            if (salaries[person] > max) {
+                max = salaries[person];
+            }
+        }
+    }
+
+    return max;
+}
+
+// Приклад використання:
+var salaries1 = {
+    John: 100,
+    Bill: 300,
+    Mike: 250,
+};
+
+var salaries2 = {
+    Cris: 150,
+    Brain: 600,
+    John: 300,
+    Steve: 400,
+    Bill: 50,
+};
+
+console.log(maxSalary(salaries1)); // Виведе 300
+console.log(maxSalary(salaries2)); // Виведе 600
+
+
+
+
+        </script>
+</body>
+</html>
