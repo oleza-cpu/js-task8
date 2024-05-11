@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <Div>
+        <h1> Hello World</h1>
+    </Div>
+    <script type="text/javascript">
+  
+
+function MP3Player(brand, model, storageCapacity) {
+    this.brand = brand;
+    this.model = model;
+    this.storageCapacity = storageCapacity;
+    this.currentTrack = ""; 
+}
+
+
+MP3Player.prototype.play = function(track) {
+    this.currentTrack = track;
+    console.log(`Відтворення треку: ${track}`);
+};
+
+MP3Player.prototype.stop = function() {
+    this.currentTrack = "";
+    console.log("Відтворення зупинено");
+};
+
+
+var player1 = new MP3Player("Sony", "Walkman NW-A55", "64GB");
+var player2 = new MP3Player("Apple", "iPod Touch", "128GB");
+var player3 = new MP3Player("Samsung", "Galaxy Player", "32GB");
+
+
+player1.play("Track 1");
+player2.play("Track 2");
+player3.play("Track 3");
+player1.stop();
+
+
+
+        </script>
+</body>
+</html>
