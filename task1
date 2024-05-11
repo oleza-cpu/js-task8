@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <Div>
+        <h1> Hello World</h1>
+    </Div>
+    <script type="text/javascript">
+  
+  var calculator = {
+    read: function() {
+        this.a = parseFloat(prompt("Введіть перше число:"));
+        this.b = parseFloat(prompt("Введіть друге число:"));
+    },
+    sum: function() {
+        return this.a + this.b;
+    },
+    mul: function() {
+        return this.a * this.b;
+    }
+};
+
+calculator.read();
+console.log(calculator.sum());
+console.log(calculator.mul());
+
+
+
+        </script>
+</body>
+</html>
